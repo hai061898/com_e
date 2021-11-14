@@ -16,7 +16,7 @@ class CartBloc extends Bloc<CartEvent, CartState> {
     else if (event is OnMakePayment) {
       try {
         yield LoadingPaymentState();
-        final mesAnio = event.creditCardFrave!.expiracyDate.split('/');
+        // final mesAnio = event.creditCardFrave!.expiracyDate.split('/');
         // cắt thành output: 01/01/2021
         // final resp = await stripeService.payWithCardExists(
         //     amount: event.amount,
