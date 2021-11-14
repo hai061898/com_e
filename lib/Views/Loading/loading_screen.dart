@@ -1,4 +1,5 @@
 import 'package:e_com/Bloc/auth/auth_bloc.dart';
+import 'package:e_com/Views/Presentation/presentiton_screen.dart';
 import 'package:e_com/Widgets/animation_router.dart';
 import 'package:e_com/Widgets/text_frave.dart';
 import 'package:flutter/material.dart';
@@ -17,17 +18,17 @@ class LoadingPage extends StatelessWidget {
           // page: là chuyển sang screen nào đó
           //   Navigator.of(context).pushReplacement chuyển đến trang nào trong routes
           //   rutaFrave hàm animetion (trong thư mục widgets)
-          //Curves là kiểu chuyển sang trang như thế nào (Curves.easeOut làm cho hoạt ảnh bắt đầu nhanh và kết thúc chậm.)  
+          //Curves là kiểu chuyển sang trang như thế nào (Curves.easeOut làm cho hoạt ảnh bắt đầu nhanh và kết thúc chậm.)
         } else if (state is LogOutState) {
           Navigator.of(context).pushReplacement(
-              rutaFrave(page: HomeScreenPage(), curved: Curves.easeInOut));
+              rutaFrave(page:const HomeScreenPage(), curved: Curves.easeInOut));
         }
       },
       child: Scaffold(
-        backgroundColor:const  Color(0xff1E4DD8),
+        backgroundColor: const Color(0xff1E4DD8),
         body: Center(
           child: Container(
-            padding:const  EdgeInsets.all(15.0),
+            padding: const EdgeInsets.all(15.0),
             height: 120,
             width: 280,
             decoration: BoxDecoration(
@@ -35,17 +36,16 @@ class LoadingPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10.0)),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children:  [
+              children: [
                 const TextFrave(
-                    text: 'FRAVE SHOP',
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500),
+                    text: 'SHOP', fontSize: 20, fontWeight: FontWeight.w500),
 
-                //TextFrave trong thư mục Widgets 
+                //TextFrave trong thư mục Widgets
                 const SizedBox(height: 20.0),
                 Row(
-                  children:const  [
-                     CircularProgressIndicator(),
+                  children: const [
+                    CircularProgressIndicator(),
+                    //widget  icon loading
                     SizedBox(width: 15.0),
                     TextFrave(
                       text: 'Checking your device',
