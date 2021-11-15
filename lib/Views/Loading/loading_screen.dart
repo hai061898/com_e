@@ -1,4 +1,5 @@
 import 'package:e_com/Bloc/auth/auth_bloc.dart';
+import 'package:e_com/Views/Home/home_screen.dart';
 import 'package:e_com/Views/Presentation/presentiton_screen.dart';
 import 'package:e_com/Widgets/animation_router.dart';
 import 'package:e_com/Widgets/text_frave.dart';
@@ -14,7 +15,7 @@ class LoadingPage extends StatelessWidget {
       listener: (context, state) {
         if (state is LogInState) {
           Navigator.of(context).pushReplacement(
-              rutaFrave(page: HomePage(), curved: Curves.easeInOut));
+              rutaFrave(page:const  HomePage(), curved: Curves.easeInOut));
           // page: là chuyển sang screen nào đó
           //   Navigator.of(context).pushReplacement chuyển đến trang nào trong routes
           //   rutaFrave hàm animetion (trong thư mục widgets)

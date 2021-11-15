@@ -1,3 +1,4 @@
+import 'package:e_com/Views/Home/home_screen.dart';
 import 'package:e_com/Widgets/animation_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -31,7 +32,7 @@ class BottomNavigationFrave extends StatelessWidget
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            ItemsButton(i: 0, index: index, svg: 'Assets/home.svg', activeSvg: 'Assets/home-selected.svg', onPressed: () => Navigator.pushReplacement(context, rutaFrave( page: HomePage(), curved: Curves.easeInOut))),
+            ItemsButton(i: 0, index: index, svg: 'Assets/home.svg', activeSvg: 'Assets/home-selected.svg', onPressed: () => Navigator.pushReplacement(context, rutaFrave( page:const  HomePage(), curved: Curves.easeInOut))),
             // ItemsButton(i: 1, index: index, icon: Icons.favorite_outline_rounded, isIcon: true, activeIcon: Icons.favorite_rounded, onPressed: () => Navigator.pushReplacement(context, rutaFrave( page: FavoritePage(), curved: Curves.easeInOut))),
             // ItemsButton(i: 2, index: index, svg: 'Assets/bolso.svg', center: true, activeSvg: 'Assets/bolso-selected.svg', onPressed: () => Navigator.pushReplacement(context, rutaFrave( page: CartPage(), curved: Curves.easeInOut))),
             // ItemsButton(i: 3, index: index, icon: Icons.search, isIcon: true, activeIcon: Icons.search,),
