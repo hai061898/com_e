@@ -1,5 +1,6 @@
 import 'package:e_com/Data/Models/Home/products_home.dart';
 import 'package:e_com/Repositories/product_repositories.dart';
+import 'package:e_com/Views/Details%20Product/detail_product.dart';
 import 'package:e_com/Widgets/staggered_dual_view.dart';
 import 'package:e_com/Widgets/text_frave.dart';
 import 'package:flutter/material.dart';
