@@ -2,6 +2,7 @@ import 'package:e_com/Bloc/product/product_bloc.dart';
 import 'package:e_com/Data/Models/Home/products_home.dart';
 import 'package:e_com/Data/Models/products_cart.dart';
 import 'package:e_com/Helpers/model_add_cart.dart';
+import 'package:e_com/Views/Cart/cart.dart';
 import 'package:e_com/Views/Home/home_screen.dart';
 import 'package:e_com/Widgets/animation_router.dart';
 import 'package:e_com/Widgets/text_frave.dart';
@@ -205,7 +206,7 @@ class DetailsProductPage extends StatelessWidget
 
                           productBloc.add( AddProductToCart( product: productSelect ));
                           
-                          Navigator.of(context).push(rutaFrave(page: CartPage(), curved: Curves.easeInOut));
+                          Navigator.of(context).push(rutaFrave(page:const CartPage(), curved: Curves.easeInOut));
 
                         },
                       ),

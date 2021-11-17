@@ -2,6 +2,7 @@ import 'package:animate_do/animate_do.dart';
 import 'package:e_com/Bloc/auth/auth_bloc.dart';
 import 'package:e_com/Bloc/general/general_bloc.dart';
 import 'package:e_com/Bloc/product/product_bloc.dart';
+import 'package:e_com/Views/Cart/cart.dart';
 import 'package:e_com/Views/Categories/category_screen.dart';
 import 'package:e_com/Widgets/animation_router.dart';
 import 'package:e_com/Widgets/text_frave.dart';
@@ -82,7 +83,7 @@ class _ListHomeState extends State<ListHome> {
                     ),
                     InkWell(
                       borderRadius: BorderRadius.circular(20.0),
-                      onTap: () => Navigator.of(context).pushReplacement(rutaFrave(page: CartPage(), curved: Curves.easeInOut)),
+                      onTap: () => Navigator.of(context).pushReplacement(rutaFrave(page:const CartPage(), curved: Curves.easeInOut)),
                       child: Stack(
                         children: [
                           FadeInRight(
