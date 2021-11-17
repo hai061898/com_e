@@ -3,6 +3,8 @@ import 'package:e_com/Widgets/bottom_custom.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'components/main_home.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -17,7 +19,7 @@ class HomePage extends StatelessWidget {
       body: Stack(
         children: [
 
-          // ListHome(),
+         const ListHome(),
           
           Positioned(
             bottom: 20,
