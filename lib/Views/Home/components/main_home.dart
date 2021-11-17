@@ -2,6 +2,7 @@ import 'package:animate_do/animate_do.dart';
 import 'package:e_com/Bloc/auth/auth_bloc.dart';
 import 'package:e_com/Bloc/general/general_bloc.dart';
 import 'package:e_com/Bloc/product/product_bloc.dart';
+import 'package:e_com/Views/Categories/category_screen.dart';
 import 'package:e_com/Widgets/animation_router.dart';
 import 'package:e_com/Widgets/text_frave.dart';
 import 'package:flutter/material.dart';
@@ -134,7 +135,7 @@ class _ListHomeState extends State<ListHome> {
                 children: [
                  const TextFrave(text: 'Categories', fontSize: 18, fontWeight: FontWeight.w600,),
                   GestureDetector(
-                    onTap: () => Navigator.of(context).push(rutaFrave(page: CategoriesPage(), curved: Curves.easeInOut)),
+                    onTap: () => Navigator.of(context).push(rutaFrave(page:const  CategoriesPage(), curved: Curves.easeInOut)),
                     child: Row(
                       children: const [
                         TextFrave(text: 'See All', fontSize: 17 ),

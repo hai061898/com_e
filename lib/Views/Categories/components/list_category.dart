@@ -4,6 +4,8 @@ import 'package:e_com/Widgets/text_frave.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../category_product.dart';
+
 class ListCategories extends StatelessWidget 
 {
   
