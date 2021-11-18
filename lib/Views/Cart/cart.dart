@@ -1,4 +1,5 @@
 import 'package:e_com/Bloc/product/product_bloc.dart';
+import 'package:e_com/Views/Checkout/check_out.dart';
 import 'package:e_com/Widgets/animation_router.dart';
 import 'package:e_com/Widgets/btn_frave.dart';
 import 'package:e_com/Widgets/text_frave.dart';
@@ -61,7 +62,7 @@ class CartPage extends StatelessWidget
                     height: 56,
                     onPressed: (){
                       if( productBloc.product.isNotEmpty ) {
-                        Navigator.of(context).push(rutaFrave(page: CheckOutPagePage(), curved: Curves.easeInOut));
+                        Navigator.of(context).push(rutaFrave(page:const  CheckOutPagePage(), curved: Curves.easeInOut));
                       }
                     },
                   ),
