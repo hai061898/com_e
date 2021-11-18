@@ -5,6 +5,7 @@ import 'package:e_com/Helpers/modal_loading.dart';
 import 'package:e_com/Helpers/model_payment.dart';
 import 'package:e_com/Service/stripe_service.dart';
 import 'package:e_com/Views/Delivery/delivery_screen.dart';
+import 'package:e_com/Views/Payment/payment.dart';
 import 'package:e_com/Widgets/animation_router.dart';
 import 'package:e_com/Widgets/btn_frave.dart';
 import 'package:e_com/Widgets/text_frave.dart';
@@ -123,7 +124,7 @@ class CheckOutPagePage extends StatelessWidget {
                                         color: Colors.blue,
                                         fontSize: 18)),
                             onTap: () => Navigator.of(context).push(rutaFrave(
-                                page: PaymentPage(), curved: Curves.easeInOut)))
+                                page:const  PaymentPage(), curved: Curves.easeInOut)))
                       ],
                     ),
                     const Divider(),
