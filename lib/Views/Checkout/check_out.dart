@@ -4,6 +4,7 @@ import 'package:e_com/Bloc/product/product_bloc.dart';
 import 'package:e_com/Helpers/modal_loading.dart';
 import 'package:e_com/Helpers/model_payment.dart';
 import 'package:e_com/Service/stripe_service.dart';
+import 'package:e_com/Views/Delivery/delivery_screen.dart';
 import 'package:e_com/Widgets/animation_router.dart';
 import 'package:e_com/Widgets/btn_frave.dart';
 import 'package:e_com/Widgets/text_frave.dart';
@@ -29,15 +30,15 @@ class CheckOutPagePage extends StatelessWidget {
     return BlocListener<CartBloc, CartState>(
       listener: (context, state) {
         if (state is LoadingPaymentState) {
-          modalLoading(context, 'Making payment...');
+          modalLoading(context, 'Making payment...'); // nếu laoding hiện thông báo này
         } else if (state is SuccessPaymentState) {
           Navigator.pop(context);
-          modalPayment(context);
+          modalPayment(context); // hiện thông báo thành công
         } else if (state is FailurePaymentState) {
           Navigator.pop(context);
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
               content: TextFrave(text: state.err.toString(), fontSize: 17),
-              backgroundColor: Colors.red));
+              backgroundColor: Colors.red));//nếu có lỗi hiện thông tin lỗi ra 
         }
       },
       child: Scaffold(
@@ -79,7 +80,7 @@ class CheckOutPagePage extends StatelessWidget {
                             color: Colors.blue,
                             fontSize: 18),
                         onTap: () => Navigator.of(context).push(rutaFrave(
-                            page: DeliveryPage(), curved: Curves.easeInOut)),
+                            page:const DeliveryPage(), curved: Curves.easeInOut)),
                       ),
                     ],
                   ),
