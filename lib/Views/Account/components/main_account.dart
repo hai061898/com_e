@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:animate_do/animate_do.dart';
 import 'package:e_com/Bloc/auth/auth_bloc.dart';
 import 'package:e_com/Helpers/uploadingfile.dart';
+import 'package:e_com/Views/CreditCard/credit_card.dart';
 import 'package:e_com/Views/History/history_screen.dart';
 import 'package:e_com/Views/Presentation/presentiton_screen.dart';
 import 'package:e_com/Views/Profile/profile.dart';
@@ -157,7 +158,7 @@ class _ListProfileState extends State<ListProfile>
                       borderRadius: BorderRadius.circular(50.0),
                       icon: Icons.credit_card_rounded,
                       backgroundColor: const Color(0xffFFCD3A),
-                      onPressed: () => Navigator.of(context).push(rutaFrave(page: CreditCardPage(), curved: Curves.easeInOut)),
+                      onPressed: () => Navigator.of(context).push(rutaFrave(page:const CreditCardPage(), curved: Curves.easeInOut)),
                     ),
                   ],
                 ),
