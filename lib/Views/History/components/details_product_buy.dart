@@ -13,7 +13,7 @@ class DetailsProductsBuy extends StatelessWidget {
       physics: const BouncingScrollPhysics(),
       padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
       itemCount: purchased!.orderBuy.length,
-      itemBuilder: (_, i) => Container( //(_,i) _ đó nghĩ là k đối số 
+      itemBuilder: (_, i) => Container( //(_,i) _ là loại bổ đối số k cần thiết
         height: 400,
         padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
         margin: const EdgeInsets.only(bottom: 15.0),
