@@ -5,6 +5,7 @@ import 'package:e_com/Bloc/auth/auth_bloc.dart';
 import 'package:e_com/Helpers/uploadingfile.dart';
 import 'package:e_com/Views/History/history_screen.dart';
 import 'package:e_com/Views/Presentation/presentiton_screen.dart';
+import 'package:e_com/Views/Profile/profile.dart';
 import 'package:e_com/Widgets/animation_router.dart';
 import 'package:e_com/Widgets/circle_frave.dart';
 import 'package:e_com/Widgets/text_frave.dart';
